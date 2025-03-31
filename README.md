@@ -110,15 +110,10 @@ Start the API Gateway:
 The API Gateway will start on http://localhost:8080
 
 Start the Microservices:
-Start each microservice in a separate terminal window (or use an IDE to run them):
-cd user
-mvn spring-boot:run
-
-cd team
-mvn spring-boot:run
-
-cd player
-mvn spring-boot:run
+Start each microservice 
+1. user
+2. team
+3. player
 
 Verify the System:
 Use a tool like Postman to test the API endpoints through the API Gateway. Example:
