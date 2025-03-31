@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user
+          predicates:
+            - Path=/api/users/**
+        - id: team-service
+          uri: lb://team
+          predicates:
+            - Path=/api/teams/**
+        - id: player-service
+          uri: lb://player
+          predicates:
+            - Path=/api/players/**
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty: DEBUG
+    org.springframework.cloud.loadbalancer: DEBUG
