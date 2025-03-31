@@ -14,7 +14,6 @@ This repository, `player-auction-backend`, contains the backend system for a pla
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 
 ## Overview
@@ -126,53 +125,6 @@ Use a tool like Postman to test the API endpoints through the API Gateway. Examp
 GET http://localhost:8080/api/users (routes to User Service)
 GET http://localhost:8080/api/teams (routes to Team Service)
 GET http://localhost:8080/api/players (routes to Player Service)
-
-## Project Structure
-A brief overview of the repository structure:
-
-player-auction-backend/
-├── eureka-server/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/auction/eureka/
-│   │       └── resources/
-│   │           └── application.yml
-│   └── pom.xml
-├── api-gateway/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/auction/api_gateway/
-│   │       └── resources/
-│   │           └── application.yml
-│   └── pom.xml
-├── user/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/auction/user/
-│   │       └── resources/
-│   │           └── application.yml
-│   └── pom.xml
-├── team/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/auction/team/
-│   │       └── resources/
-│   │           └── application.yml
-│   └── pom.xml
-├── player/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/auction/player/
-│   │       └── resources/
-│   │           └── application.yml
-│   └── pom.xml
-├── .gitignore
-└── README.md
 
 ## Contributing
 Contributions are welcome! To contribute:
